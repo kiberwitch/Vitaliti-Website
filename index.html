@@ -553,17 +553,32 @@
 
 			<!-- Сетка документов -->
 			<div class="documents-grid">
+
+
 				<!-- Документ 1 -->
 				<div class="document-item">
 					<h3>Лицензия на отходы</h3>
-					<a href="docs/license.jpg" class="download-btn" download>Скачать JPG</a>
+					<button class="pdf-btn download-btn" data-pdf="/сertificates/test.pdf">Показать сертификат</button>
 				</div>
 
 				<!-- Документ 2 -->
 				<div class="document-item">
 					<h3>Сертификат</h3>
-					<a href="docs/certificate.jpg" class="download-btn" download>Скачать JPG</a>
+					<button class="pdf-btn download-btn" data-pdf="/сertificates/test copy.pdf">Показать
+						сертификат</button>
 				</div>
+
+				<script>
+					// Обработчик для всех кнопок с классом .pdf-btn
+					document.querySelectorAll('.pdf-btn').forEach(btn => {
+						btn.addEventListener('click', function () {
+							const pdfFile = this.getAttribute('data-pdf');
+							window.open(pdfFile, '_blank');
+						});
+					});
+				</script>
+
+
 			</div> <!-- закрытие documents-grid -->
 		</section>
 

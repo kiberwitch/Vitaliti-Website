@@ -1594,7 +1594,7 @@ footer {
 .social-buttons {
   display: flex;
   gap: 15px;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .social-button {
@@ -1634,7 +1634,7 @@ footer {
   background-color: #ffffff;
   color: #333;
   border: none;
-  padding: 12px 25px;
+  padding: 12px 45px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 4px;
@@ -1642,7 +1642,7 @@ footer {
   text-transform: uppercase;
   transition: all 0.3s;
   width: 100%;
-  max-width: 300px;
+  max-width: 380px;
 }
 
 .callback-btn:hover {
